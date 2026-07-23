@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <h2>Web Project</h2>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="api.html">API</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+     <button id="modeBtn" onclick="darkMode()">DarkMode</button>
+</nav>
+
+
+<div class="contact-box">
+
+<h1>Contact Form</h1>
+
+<form onsubmit="return validateForm()">
+
+    <input type="text" id="name" placeholder="Enter Name">
+
+    <input type="email" id="email" placeholder="Enter Email">
+
+    <textarea id="message" placeholder="Enter Message"></textarea>
+
+    <button type="submit">
+       Submit
+    </button>
+    <div id="successMsg"></div>
+
+</form>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
